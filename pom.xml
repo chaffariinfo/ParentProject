@@ -22,6 +22,13 @@
     <module>TestProject1</module>
     <module>TestProject2</module>
   </modules>
+  
+   <scm>
+        <connection>scm:git:http://github.com/chaffariinfo/ParentProject.git</connection>
+        <developerConnection>scm:git:http://github.com/chaffariinfo/ParentProject.git</developerConnection>
+        <url>scm:git:http://github.com/chaffariinfo/ParentProject.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
   <dependencies>
     <dependency>
@@ -81,6 +88,15 @@
                       </goals>
                   </execution>
               </executions>
+          </plugin>
+		  
+		   <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-release-plugin</artifactId>
+              <version>2.5.3</version>
+              <configuration>
+                  <tagNameFormat>v@{project.version}</tagNameFormat>
+              </configuration>
           </plugin>
 
       </plugins>
