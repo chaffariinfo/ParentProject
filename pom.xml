@@ -27,7 +27,7 @@
         <connection>scm:git:http://github.com/chaffariinfo/ParentProject.git</connection>
         <developerConnection>scm:git:http://github.com/chaffariinfo/ParentProject.git</developerConnection>
         <url>scm:git:http://github.com/chaffariinfo/ParentProject.git</url>
-        <tag>HEAD</tag>
+        
     </scm>
 
   <dependencies>
